@@ -3,7 +3,7 @@
 
 Used for submissions to Kaggle competition after Oct 2020. Using this project to illustrate:
 * Git Project Organization
-* Linear Regression Implementation
+* Logistic Regression Implementation
 * Feature Engineering
 * Exploratory Data Analysis
 * Visualizations in Python
