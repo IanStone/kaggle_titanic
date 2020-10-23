@@ -35,3 +35,9 @@ def has_family_onboard(df, family_counts = ['SibSp', 'Parch']):
     df.loc[df['Family Onboard'].isnull(), 'Family Onboard'] = 0
 
     return df
+
+def cabin_letter(df, cabin_col = 'Cabin'):
+    df.loc[df[cabin_col].notnull(), 'Cabin Letter'] = (
+    df.loc[df[cabin_col].notnull(), 'Cabin'].str[0])
+    df.loc[df['Cabin Letter'].isnull(), 'Cabin Letter'] = ''
+    return df
